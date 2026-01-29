@@ -1,0 +1,258 @@
+/* ==========================================
+   STYLES FOR: The Fascinating World of Octopuses
+   ========================================== */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER SECTION
+   ========================================== */
+#header {
+    background-color: #0066cc;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#header p {
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   MAIN CONTENT SECTION
+   ========================================== */
+#main-content {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 20px 20px 20px;
+    border-radius: 4px;
+}
+
+#main-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#main-content h3,
+#main-content h4,
+#main-content h5,
+#main-content h6 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#main-content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#main-content h4 {
+    font-size: 14px;
+}
+
+#main-content h5 {
+    font-size: 13px;
+}
+
+#main-content h6 {
+    font-size: 12px;
+}
+
+#main-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#main-content ul,
+#main-content ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#main-content li {
+    margin-bottom: 8px;
+}
+
+/* Highlight important terms */
+.important {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Links styling */
+#main-content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#main-content a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   QUIZ SECTION
+   ========================================== */
+#quiz-section {
+    background-color: #e6f2ff;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 4px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#quiz-section img {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#quiz-section > div {
+    flex: 1;
+}
+
+#quiz-section h2 {
+    margin-top: 0;
+}
+
+#quiz-section form {
+    margin-top: 15px;
+}
+
+#quiz-section label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+#quiz-section input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#quiz-section input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#quiz-section input[type="submit"]:hover {
+    background-color: #0052a3;
+}
+
+/* ==========================================
+   SPECIES TABLE SECTION
+   ========================================== */
+#species-table {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 20px 20px 20px;
+    border-radius: 4px;
+}
+
+#species-table h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+#species-table th {
+    background-color: #e6e6e6;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #999;
+}
+
+#species-table td {
+    padding: 12px;
+    border: 1px solid #999;
+}
+
+#species-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* ==========================================
+   FOOTER SECTION
+   ========================================== */
+#footer {
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#footer p {
+    margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+@media (max-width: 768px) {
+    #quiz-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #quiz-section img {
+        width: 100px;
+    }
+    
+    #quiz-section input[type="text"] {
+        width: 100%;
+    }
+    
+    #main-content,
+    #species-table {
+        margin: 0 10px 20px 10px;
+        padding: 20px;
+    }
+}
